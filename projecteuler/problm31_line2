@@ -1,0 +1,127 @@
+himanshu@Dell ~/w/python> tester -line_profiler problm31.py 
+ ----------- Code Tester ---------------
+ working directory : /home/himanshu/work/python
+ Compiling for line_profiler 
+ MSG : Remember to put @profile at top of profiling function
+ Compiling..........
+ Output by kernprof :--
+
+(' Stng = ', 'za', ' | count = ', 1, ' | Time = ', 0.12237811088562012, ' | main_counter = ', 1)
+(' Stng = ', 'zb', ' | count = ', 1, ' | Time = ', 0.12382006645202637, ' | main_counter = ', 2)
+(' Stng = ', 'zab', ' | count = ', 99, ' | Time = ', 12.082799911499023, ' | main_counter = ', 101)
+('TOTAL POSSIBILITIES = ', 101)
+('Total time taken = ', 12.329449892044067)
+Wrote profile results to problm31.py.lprof
+ Output by python :--
+
+Timer unit: 1e-06 s
+
+File: problm31.py
+Function: number_of_coins at line 12
+Total time: 5.7729 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    12                                           @profile
+    13                                           def number_of_coins(zx,y):
+    14                                             global main_counter
+    15                                             global stng_dict
+    16                                             # this function : runs & proccesses each zx and y using itertools
+    17                                             # and then we sum each list created by them & check == 200
+    18         3            5      1.7      0.0    start = time.time()
+    19         3           23      7.7      0.0    coins_collection = itertools.combinations_with_replacement(zx,y)
+    20         3            3      1.0      0.0    counter = 0
+    21     20304        48209      2.4      0.8    for i in coins_collection:
+    22     20301        14065      0.7      0.2      sum = 0
+    23                                               
+    24   4040501      2655471      0.7     46.0      for j in i:
+    25   4020200      3039789      0.8     52.7        sum += stng_dict[j]
+    26                                                 # if j == 'a':sum += 1
+    27                                                 # elif j == 'b':sum += 2
+    28                                                 # elif j == 'c':sum += 3
+    29                                                 # elif j == 'd':sum += 4
+    30                                                 # elif j == 'e':sum += 5
+    31                                                 # elif j == 'f':sum += 6
+    32                                                 # elif j == 'g':sum += 7
+    33                                                 # elif j == 'h':sum += 8
+    34     20301        15032      0.7      0.3      if sum == 200:
+    35       101           70      0.7      0.0        counter += 1
+    36         3            3      1.0      0.0    main_counter += counter
+    37         3          222     74.0      0.0    print(" Stng = ",zx," | count = ",counter," | Time = ",time.time() - start," | main_counter = ",main_counter)
+    38         3            7      2.3      0.0    return 0 
+
+File: problm31.py
+Function: find_x_value at line 41
+Total time: 12.3293 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    41                                           @profile
+    42                                           def find_x_value(xlist):
+    43                                             global stng_dict
+    44                                             # this function : evaluates the value of each list in xlist
+    45                                             # and passes zx and y to other function for last evaluation
+    46         4            5      1.2      0.0    for i in xlist:
+    47                                               #print("list for evaluation = ",i)
+    48         3            2      0.7      0.0      sum = 0
+    49         3            3      1.0      0.0      zx = 'z'
+    50         7            7      1.0      0.0      for j in i:
+    51         4            7      1.8      0.0        zx += j
+    52         4            6      1.5      0.0        sum += stng_dict[j]
+    53                                                 # if j == 'a':sum += 1
+    54                                                 # elif j == 'b':sum += 2
+    55                                                 # elif j == 'c':sum += 3
+    56                                                 # elif j == 'd':sum += 4
+    57                                                 # elif j == 'e':sum += 5
+    58                                                 # elif j == 'f':sum += 6
+    59                                                 # elif j == 'g':sum += 7
+    60                                                 # elif j == 'h':sum += 8
+    61                                               #print("the required ZX is = ",zx)
+    62                                               #print("Sum of the Elements of the list = ",sum)
+    63         3            3      1.0      0.0      y = 201 - sum
+    64         3     12329283 4109761.0    100.0      number_of_coins(zx,y)
+    65         1            1      1.0      0.0    return 0
+
+File: problm31.py
+Function: find_x at line 68
+Total time: 3.8e-05 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    68                                           @profile
+    69                                           def find_x():
+    70                                             # this function : finds all possible ways for x
+    71                                             # returns : x's list as xlist   
+    72         1            1      1.0      2.6    xlist = []
+    73         1            1      1.0      2.6    coins = 'ab'
+    74         9            8      0.9     21.1    for i in range(1,9):
+    75                                               # we need only combinnations
+    76                                               # for further view on what it gives out see the 
+    77                                               # python docs for itertools -> combinations
+    78         8           14      1.8     36.8      temp = itertools.combinations(coins,i)
+    79        11            9      0.8     23.7      for j in temp:
+    80         3            4      1.3     10.5        xlist.append(list(j))
+    81         1            1      1.0      2.6    return xlist
+
+File: problm31.py
+Function: main at line 84
+Total time: 12.3295 s
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    84                                           @profile
+    85                                           def main():
+    86                                             # this the main function : it connects all :) 
+    87         1            5      5.0      0.0    start = time.time()
+    88                                             # 1st finding all possible ways of x
+    89                                             # find_x should return a list
+    90         1           66     66.0      0.0    xlist = find_x()
+    91                                             # 2nd running the loop and finding the value of each list of x
+    92         1     12329363 12329363.0    100.0    find_x_value(xlist)
+    93         1           14     14.0      0.0    print("TOTAL POSSIBILITIES = ",main_counter)
+    94         1           13     13.0      0.0    print("Total time taken = ",time.time()-start)
+    95         1            1      1.0      0.0    return 0
+
+
+ ---------------- *** -------------------
+himanshu@Dell ~/w/python> 

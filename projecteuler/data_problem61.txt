@@ -1,0 +1,46 @@
+tri : 2145 , penta : 4510 , sqr : 1089 , hexa : 8911 , hepta : 1128 , octa : 2821
+tri : 2145 , penta : 4510 , sqr : 1024 , octa : 2465 , hepta : 6533 , hexa : 3321
+tri : 2145 , penta : 4510 , sqr : 1089 , octa : 8965 , hepta : 6533 , hexa : 3321
+tri : 6786 , hexa : 8646 , sqr : 4624 , octa : 2465 , penta : 6533 , hepta : 3367
+tri : 6441 , hexa : 4186 , penta : 8626 , octa : 2640 , hepta : 4033 , sqr : 3364
+tri : 4095 , hepta : 9517 , sqr : 1764 , hexa : 6441 , penta : 4186 , octa : 8640
+tri : 6441 , hepta : 4141 , hexa : 4186 , octa : 8640 , penta : 4033 , sqr : 3364
+tri : 1540 , octa : 4033 , sqr : 3364 , hepta : 6426 , hexa : 2673 , penta : 7315
+tri : 1596 , octa : 9633 , sqr : 3364 , hepta : 6426 , hexa : 2673 , penta : 7315
+tri : 2415 , octa : 1541 , hepta : 4141 , hexa : 4186 , penta : 8646 , sqr : 4624
+sqr : 8281 , tri : 8128 , hexa : 2850 , penta : 5017 , octa : 1717 , hepta : 1782
+sqr : 8281 , hexa : 8128 , tri : 2850 , penta : 5017 , octa : 1717 , hepta : 1782
+sqr : 5625 , hepta : 2512 , tri : 1275 , penta : 7526 , octa : 2625 , hexa : 2556
+sqr : 9216 , hepta : 1651 , tri : 5151 , hexa : 5151 , octa : 5151 , penta : 5192
+sqr : 2116 , hepta : 1651 , penta : 5192 , octa : 9296 , tri : 9633 , hexa : 3321
+sqr : 2116 , hepta : 1651 , penta : 5192 , octa : 9296 , hexa : 9633 , tri : 3321
+sqr : 9216 , hepta : 1651 , hexa : 5151 , tri : 5151 , octa : 5151 , penta : 5192
+penta : 5192 , sqr : 9216 , hepta : 1651 , tri : 5151 , octa : 5151 , hexa : 5151
+penta : 5192 , sqr : 9216 , hepta : 1651 , hexa : 5151 , octa : 5151 , tri : 5151
+penta : 2147 , hexa : 4753 , sqr : 5329 , tri : 2926 , hepta : 2628 , octa : 2821
+penta : 4030 , hepta : 3010 , sqr : 1024 , tri : 2485 , octa : 8515 , hexa : 1540
+penta : 5017 , hepta : 1782 , sqr : 8281 , hexa : 8128 , octa : 2850 , tri : 5050
+hexa : 6441 , tri : 4186 , penta : 8626 , octa : 2640 , hepta : 4033 , sqr : 3364
+hexa : 3321 , sqr : 2116 , penta : 1617 , tri : 1770 , hepta : 7021 , octa : 2133
+hexa : 2145 , penta : 4510 , sqr : 1089 , tri : 8911 , hepta : 1128 , octa : 2821
+hexa : 2145 , penta : 4510 , sqr : 1024 , octa : 2465 , hepta : 6533 , tri : 3321
+hexa : 2145 , penta : 4510 , sqr : 1089 , octa : 8965 , hepta : 6533 , tri : 3321
+hexa : 6441 , hepta : 4141 , tri : 4186 , octa : 8640 , penta : 4033 , sqr : 3364
+hexa : 4186 , hepta : 8614 , penta : 1426 , tri : 2628 , octa : 2850 , sqr : 5041
+hexa : 1128 , octa : 2821 , sqr : 2116 , penta : 1617 , hepta : 1717 , tri : 1711
+hexa : 1540 , octa : 4033 , sqr : 3364 , hepta : 6426 , tri : 2673 , penta : 7315
+hexa : 2415 , octa : 1541 , hepta : 4141 , tri : 4186 , penta : 8646 , sqr : 4624
+hepta : 6426 , tri : 2628 , hexa : 2850 , penta : 5017 , octa : 1717 , sqr : 1764
+hepta : 1071 , tri : 7140 , octa : 4033 , hexa : 3321 , sqr : 2145 , penta : 4510
+hepta : 1782 , sqr : 8281 , hexa : 8128 , tri : 2850 , octa : 5050 , penta : 5017
+hepta : 4141 , hexa : 4186 , penta : 8626 , tri : 2628 , octa : 2850 , sqr : 5041
+hepta : 1071 , hexa : 7140 , octa : 4033 , tri : 3321 , sqr : 2145 , penta : 4510
+octa : 2640 , tri : 4095 , penta : 9560 , sqr : 6084 , hexa : 8464 , hepta : 6426
+octa : 4033 , hepta : 3367 , sqr : 6724 , tri : 2485 , penta : 8515 , hexa : 1540
+
+  
+1281, 8128, 2882, 8256, 5625, 2512
+
+set sum =  348686
+ list sum =  1034038
+Time Taken is =  0.7414863109588623

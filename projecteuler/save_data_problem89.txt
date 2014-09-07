@@ -1,0 +1,3 @@
+Minimal characters =  8229
+Given characters =  8199
+Time Taken is =  0.0038330554962158203
